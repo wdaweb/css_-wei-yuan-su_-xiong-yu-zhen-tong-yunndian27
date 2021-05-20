@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-1 | syringe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', snas-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            background: #FFFFE6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .syringe {
+            width: 900px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .needlebarrel {
+            width: 600px;
+            height: 150px;
+            border: 1px solid #333;
+            background: linear-gradient(0deg, #fff, #bbb 40%, #fff);
+            position: relative;
+        }
+
+        .needlebarrel::before {
+            content: '';
+            width: 300px;
+            height: 148px;
+            background: linear-gradient(0deg, #FFFFA4, #BDBD2A 40%, #FFFFA4);
+            opacity: 0.8;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .needlebarrel::after {
+            content: '';
+            width: 50px;
+            height: 150px;
+            background: #333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .needlebarrel p {
+            color: #bbb;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .scaleall {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .scale {
+            width: 20px;
+            height: 20px;
+            border-right: 1px solid #777;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pin {
+            width: 80px;
+            height: 100px;
+            border: 1px solid #333;
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(0deg, #fff, #bbb 35%, #fff);
+            position: relative;
+        }
+
+        .pin::after {
+            content: '';
+            width: 100px;
+            height: 2px;
+            background: #333;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+        }
+
+        .push {
+            width: 80px;
+            height: 100px;
+            border: 1px solid #333;
+            background: linear-gradient(0deg, #fff, #bbb 35%, #fff);
+            position: relative;
+        }
+
+        .push::after {
+            content: '';
+            width: 60px;
+            height: 150px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background: linear-gradient(0deg, #fff, #bbb 40%, #fff);
+            position: absolute;
+            top: 50%;
+            left: -39%;
+            transform: translate(-50%, -50%);
+        }
+
+        .copyright {
+            position: absolute;
+            color: #777;
+            bottom: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="syringe">
+            <div class="push"></div>
+            <div class="needlebarrel">
+                <div class="scaleall">
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                    <div class="scale"></div>
+                </div>
+                <p>Made in Taiwan</p>
+            </div>
+            <div class="pin"></div>
+        </div>
+        <div class="copyright">&copy; 2021 YunnDian Wang </div>
+    </div>
+</body>
+
+</html>
